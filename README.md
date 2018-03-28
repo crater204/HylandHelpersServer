@@ -12,3 +12,5 @@ Server Endpoints:
 - POST '/api/users': Adds the user in the body of the request to the list of users
 - PUT '/api/users/:id': Replaces the current user with matching id with the user in the body of the request
 - DELETE '/api/users/:id': Deletes the user with the specified id
+
+Ofnote the default port of the server is 8000 so to hit a server running locally you would hit localhost:8000/INSERT_ENDPOINT_HERE
