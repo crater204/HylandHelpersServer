@@ -1,5 +1,6 @@
 const express = require('express');
 const bodyParser = require('body-parser');
+const cors = require('cors');
 const app = express();
 
 let nextId = 5;
@@ -94,7 +95,7 @@ let users = [
         }         
     },
 ];
-
+app.use(cors());
 app.use(bodyParser.json());
 
 app.listen(8000, () => {
