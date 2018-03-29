@@ -5,30 +5,94 @@ const app = express();
 let nextId = 5;
 let users = [ 
     {
-        "name" : "Tim",
         "id" : "0",
-        "favorite-color": "blue"         
+        "name" : "Tim",
+        "numClaps": "5",
+        "skills": [
+            "Javascript"
+        ],
+        "gifts": [
+            "coin",
+            "coin"
+        ],
+        "avatar": {
+            "skinPigment": "skin_ddc994",
+            "hairColor":"hair_bangs_2_brown",
+            "shirtColor":"slim_shirt_black"
+        }         
     },
     {
-        "name" : "Charlie",
         "id" : "1",
-        "favorite-color": "red"         
+        "name" : "Bill",
+        "numClaps": "25",
+        "skills": [
+            "Angular",
+            "HTML",
+            "CSS"
+        ],
+        "gifts": [
+            "star",
+            "wizard-hat",
+            "sword",
+            "sparkles"
+        ],
+        "avatar": {
+            "skinPigment": "skin_f5a76e",
+            "hairColor":"hair_bangs_2_blond",
+            "shirtColor":"slim_shirt_pink"
+        }         
     },
     {
-        "name" : "Alex",
         "id" : "2",
-        "favorite-color": "green"         
-    },
-    {
-        "name" : "Bob",
-        "id" : "3",
-        "favorite-color": "aqua"         
-    },
-    {
         "name" : "Joe",
+        "numClaps": "2",
+        "skills": [
+            "Java",
+            "C#"
+        ],
+        "gifts": [
+        ],
+        "avatar": {
+            "skinPigment": "skin_915533",
+            "hairColor":"hair_bangs_2_white",
+            "shirtColor":"slim_shirt_green"
+        }         
+    },
+    {
+        "id" : "3",
+        "name" : "Garen",
+        "numClaps": "12",
+        "skills": [
+            "Demacia",
+            "Swords"
+        ],
+        "gifts": [
+            "sword"
+        ],
+        "avatar": {
+            "skinPigment": "skin_98461a",
+            "hairColor":"hair_bangs_2_brown",
+            "shirtColor":"slim_shirt_black"
+        }         
+    },
+    {
         "id" : "4",
-        "favorite-color": "yellow"         
-    }
+        "name" : "Lulu",
+        "numClaps": "85",
+        "skills": [
+            "Being Purple"
+        ],
+        "gifts": [
+            "sparkles",
+            "wizard-hat",
+            "heart"
+        ],
+        "avatar": {
+            "skinPigment": "skin_915533",
+            "hairColor":"hair_bangs_2_white",
+            "shirtColor":"slim_shirt_pink"
+        }         
+    },
 ];
 
 app.use(bodyParser.json());
